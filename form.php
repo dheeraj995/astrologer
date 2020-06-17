@@ -50,9 +50,9 @@ function form($data) {
 
 }
 
-$to = "wedokickassmarketing@gmail.com";
+$to = "astrologerdushyantsharma@gmail.com";
 $subject = "Contact Astrologer Dushyant Sharama";
-$msg = "Hi, \n\r  My name is :". $name." \n\r Subject :".$subject. " \n\r And My Mobile Number is :".$mobile. " \n\r And My Mail Id is :" .$email. " \n\r Message :" . $message;
+$msg = "Hi, \n\r  My name is :". $name." \n\r Subject :".$subject. " \n\r My Mail Id is :" .$email. " \n\r Message :" . $message;
 $headers = "From:"  .$email.  "\r\n";
 $headers .= "To: ".$to."\n";
 $headers .= "Organization: Astrologer Dushyant Sharma\r\n";
@@ -63,7 +63,7 @@ $headers .= "X-Mailer: PHP". phpversion() ."\r\n" ;
 
 
 
-mail($to,$subject,$msg,$headers, "-f wedokickassmarketing@gmail.com");
+mail($to,$subject,$msg,$headers, "-f astrologerdushyantsharma@gmail.com");
 echo '<script type="text/javascript">alert("Successfull!!");window.location.href="index.html";</script>';
 ?>
 
