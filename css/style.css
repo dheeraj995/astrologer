@@ -158,7 +158,7 @@ a:hover {
 }
 
 .color {
-  color: #6CB670;
+  color: #f99200;
 }
 
 .sub-title {
@@ -181,6 +181,7 @@ a:hover {
 
 .bg-one {
   background-color: #1d1d23 ;
+  padding-top: 70px;
 }
 
 .bg-dark {
@@ -667,7 +668,7 @@ a:hover {
   margin: 0 auto;
 }
 
-.hero-area .block .btn-transparent {
+.hero-area .block .btn-transparent, #thanks .btn-transparent {
   margin-top: 40px;
   border-color: #fff;
   padding: 14px 50px;
@@ -991,6 +992,15 @@ div.con-info {
   padding: 30px 0 20px;
 }
 
+#pricing  {
+  padding: 0px 0px 50px !important;
+}
+
+#pricing .title {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
 .price-title h3 {
   color: #f99200;
   margin: 0 0 10px;
@@ -1296,6 +1306,98 @@ div.con-info {
 
 .member-meta span {
   font-size: 12px;
+}
+
+/*=================================================================
+ Courses section
+==================================================================*/
+
+#thanks {
+  background-image: url('../images/banner.jpg');
+  background-size: cover;
+  padding: 50px 0px;
+}
+
+#thanks .title h2 {
+  margin-top: 80px;
+  padding: 10px 0px;
+}
+
+#thanks p {
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.adv-cour, .basic-cour {
+  padding: 30px 0px 50px;
+}
+
+#couse .title p {
+  color: #fff;
+  padding-top: 20px;
+}
+
+.adv-cour h3, .basic-cour h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.adv-cour p, .basic-cour p {
+  font-size: 16px;
+  color: #afbac4;
+  line-height: 1.5;
+}
+
+.box_cour {
+  height: 360px;
+  width: 300px;
+  border-radius: 10px;
+  border: 1px solid #303030;
+  text-align: center;
+}
+
+.box_cour img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 100%;
+  height: 200px;
+}
+
+.box_cour h2 {
+  text-align: left;
+  font-size: 22px;
+  padding: 0px 10px;
+}
+
+.course_desc {
+  text-align: center;
+}
+
+.desc h3 {
+  color: #fff;
+  margin-top: 0px;
+}
+
+.desc span {
+  color: #f99200;
+}
+
+.desc li {
+  padding: 1px 0px 8px;
+  color: #fff;
+}
+
+.desc i {
+  color: #f99200;
+  margin-right: 20px;
+}
+
+@media (max-width: 480px) {
+  .box_cour {
+    width: auto;
+    margin-bottom: 80px;
+  }
 }
 
 /*=================================================================
@@ -2197,8 +2299,12 @@ nav > .nav-tabs li a.focus
     border-radius:0;
 }
 
+.navigation .navigation-menu li a.active {
+    color: #f99200;
+}
+
 #services {
-  padding: 50px 0px 100px !important;
+  padding: 50px 0px 30px !important;
 }
 
 #services a.active::after {
@@ -2210,15 +2316,45 @@ nav > .nav-tabs li a.focus
   margin-top: 45px;
 }
 
-#services .nav.nav-tabs li a.active{
+#services .nav.nav-tabs li a.active , {
   background-color: #f99200 !important;
+}
+
+#services .nav.nav-pills li a.active , {
+  color: #000 !important;
+}
+
+#services .tabs-sec1 {
+  text-align: center;
+  padding: 0px 60px;
+}
+
+.Service1 {
+  border-radius: 10px;
+  border: 1px solid #303030;
+  padding: 15px 40px 30px;
+}
+
+.Service1 h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.nav.nav-tabs li a.active {
+  background-color: #f99200 !important;
+  color: #000;
+}
+
+.Service1 p {
+  text-align: left;
+  line-height: 1.7;
 }
 
 .tab-content {
   text-align: center;
   color: #fff;
-  height: 130px;
-  padding:50px 0px;
+  height: auto;
+  padding:50px 0px 0px;
 }
 
 .tab-content h2 {
@@ -2226,6 +2362,36 @@ nav > .nav-tabs li a.focus
   font-weight: 700;
   color: #fff;
   margin-bottom: 30px !important;
+}
+
+.service_part .tab-content {
+  height: auto;
+  padding: 10px 20px 0px;
+}
+
+.nav.nav-pills a {
+  padding: 10px 5px;
+  margin-bottom: 10px;
+}
+
+.nav.nav-pills a:hover {
+  color: #000 !important;
+}
+
+.nav.nav-pills li a.tablink.active {
+  color: #000 !important;
+}
+
+@media (max-width: 480px) {
+  .tab-content {
+    height: auto;
+    padding: 20px 0px;
+  }
+
+  #services .tabs-sec1 {
+    text-align: center;
+    padding: 0px;
+  }
 }
 
 nav > .nav-tabs a.tablink .active
